@@ -7,8 +7,8 @@
        * SITE_NAME：站点名称
        */
       window.GLOBAL_CONFIG = {
-        SCF_GATEWAY: "https://v.foresta.workers.dev",
-        SITE_NAME: "OD",
+        SCF_GATEWAY: "//v.foresta.workers.dev",
+        SITE_NAME: "FODI",
         IS_CF: true,
       };
       if (window.GLOBAL_CONFIG.SCF_GATEWAY.indexOf("workers") === -1) {
@@ -556,18 +556,6 @@
           for (key in headers) {
             if (headers.hasOwnProperty(key)) {
               xhr.setRequestHeader(key, headers[key]);
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <style>
-
-
-            .test{
-                float: left;
-                width: 100%;
-                box-sizing: border-box;
-                padding: 10px;
-                min-width: 150px;
             }
           }
         }
@@ -704,8 +692,6 @@
                 files.parent + (files.parent === "/" ? "" : "/") + file.name,
                 file.url
               );
-            .container{
-                width: 100%;
             }
           }
           if (file.name !== "README.md") {
@@ -793,13 +779,6 @@
                       currentTreeNodeParentAbsolutePath + "/" + file.name
                     )
                   );
-            @media (max-width:615px ) {
-                .test{
-                    float: left;
-                    width: 100%;
-                    box-sizing: border-box;
-                    padding: 10px;
-                    min-width: 150px;
                 }
               }
             });
@@ -1066,13 +1045,6 @@
                   case "js":
                     type = "script";
                     break;
-            @media (max-width:465px ) {
-                .test{
-                    float: left;
-                    width: 50%;
-                    box-sizing: border-box;
-                    padding: 10px;
-                    min-width: 150px;
                 }
                 let element = document.createElement(type);
                 let loaded = false;
@@ -1129,19 +1101,12 @@
 
             const suffix = path.split(".").pop();
             let content = document.querySelector(".content");
-            }
 
             content.appendChild(
               document
                 .getElementById("loading-wrapper-templete")
                 .content.cloneNode(true)
             );
-            @media (max-width:315px ) {
-                .test{
-                    float: left;
-                    width: 100%;
-                    box-sizing: border-box;
-                    padding: 10px;
 
             let contentType = previewHandler.fileType(suffix);
             switch (contentType) {
@@ -1266,9 +1231,6 @@
             switchRightDisplay("preview");
 
             if (contentType !== "video") return;
-        </style>
-    </head>
-    <body>
 
             let start = null;
             let right = document.querySelector(".right");
@@ -1301,30 +1263,6 @@
           switchBackForwardStatus(window.api.root);
         });
       }
-        <div class="container">
-	    <h1><p>&nbsp万里长城</p></h1>
-		<div class="test" ><a href="YTM.html"><img src="https://p.ananas.chaoxing.com/star3/origin/40d6be7b1dd72c110d2a672fb9462cea.png"  referrerpolicy="no-referrer"  style="max-width: 100%;"/></a></div>
-		<h1><p>&nbsp</p></h1>
-		<h1><p>&nbsp蠢沫沫</p></h1>
-		<div class="test" ><a href="CMM.html"><img src="https://p.ananas.chaoxing.com/star3/origin/40d6be7b1dd72c110d2a672fb9462cea.png"  referrerpolicy="no-referrer"  style="max-width: 100%;"/></a></div>
-		<h1><p>&nbsp</p></h1>
-		<h1><p>&nbsp万里长城</p></h1>
-		<div class="test" ><a href="11.html"><img src="https://p.ananas.chaoxing.com/star3/origin/40d6be7b1dd72c110d2a672fb9462cea.png"  referrerpolicy="no-referrer"  style="max-width: 100%;"/></a></div>       
-		<h1><p>&nbsp</p></h1>
-		<h1><p>&nbsp万里长城</p></h1>
-		<div class="test" ><a href="11.html"><img src="https://p.ananas.chaoxing.com/star3/origin/40d6be7b1dd72c110d2a672fb9462cea.png"  referrerpolicy="no-referrer"  style="max-width: 100%;"/></a></div>
-        <h1><p>&nbsp</p></h1>
-		<h1><p>&nbsp万里长城</p></h1>
-        <div class="test" ><a href="11.html"><img src="https://p.ananas.chaoxing.com/star3/origin/40d6be7b1dd72c110d2a672fb9462cea.png"  referrerpolicy="no-referrer"  style="max-width: 100%;"/></a></div>
-	    <h1><p>&nbsp</p></h1>
-		<h1><p>&nbsp万里长城</p></h1>
-	    <div class="test" ><a href="11.html"><img src="https://p.ananas.chaoxing.com/star3/origin/40d6be7b1dd72c110d2a672fb9462cea.png"  referrerpolicy="no-referrer"  style="max-width: 100%;"/></a></div>
-        <h1><p>&nbsp</p></h1>
-		<h1><p>&nbsp万里长城</p></h1>
-		<div class="test" ><a href="11.html"><img src="https://p.ananas.chaoxing.com/star3/origin/40d6be7b1dd72c110d2a672fb9462cea.png"  referrerpolicy="no-referrer"  style="max-width: 100%;"/></a></div>       
-        <h1><p>&nbsp</p></h1>
-		<h1><p>&nbsp万里长城</p></h1>
-		<div class="test" ><a href="11.html"><img src="https://p.ananas.chaoxing.com/star3/origin/40d6be7b1dd72c110d2a672fb9462cea.png"  referrerpolicy="no-referrer"  style="max-width: 100%;"/></a></div>
 
       function switchRightDisplay(display) {
         if (display === "preview") {
@@ -1507,8 +1445,6 @@
         window.backFordwardCache.preview = false;
         window.backFordwardCache.current = path;
 
-		</div>
-
         let cache = window.fileCache.get(path);
         if (cache === true) {
           setTimeout(() => fetchFileList(path), 200);
@@ -1683,5 +1619,4 @@
       </div>
     </div>
   </body>
-    </body>
 </html>
